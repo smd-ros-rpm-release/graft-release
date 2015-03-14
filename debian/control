@@ -1,0 +1,12 @@
+Source: ros-hydro-graft
+Section: misc
+Priority: extra
+Maintainer: Chad Rockey <chadrockey@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-hydro-catkin, ros-hydro-cmake-modules, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-nav-msgs, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-tf
+Homepage: http://ros.org/wiki/graft
+Standards-Version: 3.9.2
+
+Package: ros-hydro-graft
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-dynamic-reconfigure, ros-hydro-geometry-msgs, ros-hydro-message-runtime, ros-hydro-nav-msgs, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-tf
+Description: Graft is not yet finished. It's intended to be a full replacement to robot_pose_ekf, including native absolute references, and arbitrary topic configuration. If you try to use Graft now, please note that not all parameters are configured and you will not always see a change in behavior by modifying the parameters.
